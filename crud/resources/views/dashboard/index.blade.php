@@ -83,6 +83,7 @@
     <div><a href="./crud/login">Login</a></div>
     <form method="POST" action="{{ route('crud.logout') }}">
         @csrf
+        @method('post');
         <button type="submit">Logout</button>
     </form>
 </body>
