@@ -79,5 +79,11 @@
         </table>
     </div>
     <div><a href="./crud/create">Create</a></div>
+    <div><a href="./crud/register">Register</a></div>
+    <div><a href="./crud/login">Login</a></div>
+    <form method="POST" action="{{ route('crud.logout') }}">
+        @csrf
+        <button type="submit">Logout</button>
+    </form>
 </body>
 </html>

@@ -40,24 +40,5 @@
             <input type="submit" value="Save a New Product"/>
         </div>
     </form>
-
-    <h1>Create Users</h1>
-    <form method="post" action="{{ route('user.store') }}">
-        @csrf
-        @method('post')
-        <div>
-            <label>Name</label>
-            <input type="text" name="name" placeholder="Name"/>
-        </div>
-        <div>
-            <label>Email</label>
-            <input type="text" name="email" placeholder="Email"/>
-        </div>
-        <div>
-            <label>Password</label>
-            <input type="text" name="password" placeholder="Password"/>
-        </div>
-        <div><input type="submit" value="Create a New User"/></div>
-    </form>
 </body>
 </html>
